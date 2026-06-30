@@ -1,0 +1,16 @@
+# ================================
+#  SwayOSD — Configuração Principal
+#  Tema: Catppuccin Mocha
+#  by Sydy
+# ================================
+
+[server]
+# Mostra a porcentagem numérica ao lado da barra de volume/brilho
+show_percentage = true
+
+# Volume máximo permitido (150 = overamplification habilitado)
+# A barra fica laranja (Peach) acima de 100% graças ao style.css
+max_volume = 150
+
+# Caminho para o arquivo de estilo CSS customizado
+style = "~/.config/swayosd/style.css"

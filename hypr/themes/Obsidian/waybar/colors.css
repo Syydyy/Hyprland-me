@@ -1,0 +1,22 @@
+/* OBSIDIAN THEME */
+/* Roxo-preto mineral com índigo e lavanda fria */
+
+@define-color bg0 #030308;
+@define-color bg1 #070710;
+@define-color bg2 #0d0d20;
+@define-color bg3 #16163a;
+@define-color bg4 #252555;
+
+@define-color fg #e8e8ff;
+
+@define-color red    #ff6080;
+@define-color orange #ff9060;
+@define-color yellow #d4d4ff;
+@define-color green  #60ffb0;
+@define-color aqua   #60d0ff;
+@define-color blue   #7070ff;
+@define-color purple #a0a0ff;
+
+@define-color gray0 #c8c8ff;
+@define-color gray1 #9898cc;
+@define-color gray2 #606090;

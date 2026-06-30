@@ -1,0 +1,21 @@
+/* EMERALD THEME */
+
+@define-color bg0 #050707;
+@define-color bg1 #0b0f0e;
+@define-color bg2 #063b31;
+@define-color bg3 #0d4f41;
+@define-color bg4 #10b981;
+
+@define-color fg #ecf3f2;
+
+@define-color red #ef4444;
+@define-color orange #f97316;
+@define-color yellow #f59e0b;
+@define-color green #10b981;
+@define-color aqua #34d399;
+@define-color blue #10b981;
+@define-color purple #8b5cf6;
+
+@define-color gray0 #64748b;
+@define-color gray1 #475569;
+@define-color gray2 #334155;

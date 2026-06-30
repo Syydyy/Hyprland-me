@@ -1,0 +1,21 @@
+/* EVERFOREST THEME */
+
+@define-color bg0 #232a2e;
+@define-color bg1 #2d353b;
+@define-color bg2 #343f44;
+@define-color bg3 #3d484d;
+@define-color bg4 #475258;
+
+@define-color fg #d3c6aa;
+
+@define-color red #e67e80;
+@define-color orange #e69875;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color aqua #83c092;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+
+@define-color gray0 #859289;
+@define-color gray1 #9da9a0;
+@define-color gray2 #a7b0ae;

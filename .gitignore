@@ -1,0 +1,6 @@
+*.log
+*.cache
+node_modules/
+.DS_Store
+*.swp
+.wallpaper_history

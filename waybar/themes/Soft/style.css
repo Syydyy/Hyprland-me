@@ -1,0 +1,79 @@
+@import 'colors.css';
+
+* {
+    border: none;
+    border-radius: 12px; /* Soft, cozy rounding */
+    font-family: 'Google Sans Flex', "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: @bg1; /* Soft unified background */
+    color: @fg;
+}
+
+/* Common padding for side modules */
+#custom-pacman,
+#clock,
+#bluetooth,
+#pulseaudio,
+#network,
+#battery {
+    padding: 0 15px;
+    margin: 4px 0;
+}
+
+/* Center Modules: Horizontal Expanding Dots */
+#workspaces {
+    background: transparent;
+    padding: 6px 0px;
+}
+
+#workspaces button {
+    /* Larger base dot */
+    color: @bg2;
+    font-size: 16px; 
+    padding: 0;
+    margin: 0 6px;
+    background-color: @bg2;
+    
+    /* Set a base width to keep them circular when inactive */
+    min-width: 25px;
+    
+    /* Crucial for the horizontal expansion animation */
+    transition: all 0.4s cubic-bezier(.55, 0, .28, 1);
+}
+
+#workspaces button.active {
+    color: @purple; 
+    background-color: @bg4;
+    min-width: 50px;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    color: @blue;
+    min-width: 30px; /* Slight expansion on hover for feedback */
+}
+
+/* Left & Right Module Colors */
+#custom-pacman { color: @red; }
+#clock { color: @fg; }
+#bluetooth { color: @aqua; }
+#pulseaudio { color: @yellow; }
+#network { color: @blue; }
+#battery { color: @green; }
+
+/* Pulse animation for low battery */
+#battery.critical:not(.charging) {
+    color: @red;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    from { opacity: 1; }
+    to { opacity: 0.4; }
+}

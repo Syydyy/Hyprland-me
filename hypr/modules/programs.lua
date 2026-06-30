@@ -1,0 +1,5 @@
+browser = "firefox"
+terminal = "kitty"      
+fileManager = "dolphin"    
+codeEditor = "vscodium"     
+wallpaperEngine = "awww-daemon" 

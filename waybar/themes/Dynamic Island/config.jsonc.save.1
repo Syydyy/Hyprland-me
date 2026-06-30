@@ -1,0 +1,125 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 30,
+  "margin-top": 10,
+  "spacing": 14,
+  "modules-center": [
+    "custom/pacman",
+    "clock",
+    "hyprland/workspaces", 
+    "pulseaudio",
+    "memory",
+    "cpu",
+    "network",
+    "custom/notifications",
+  ],
+
+  "custom/pacman": {
+    "format": "󰣇{}",
+    "interval": 60,
+    "return-type": "json",
+    "on-click": "kitty yay -Syu", // Open terminal to update
+    "signal": 8,
+    "tooltip": false,
+  },
+
+  "clock": {
+    "format": "󰥔 {:%H:%M  %d/%m/%Y}",
+    "tooltip": false
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+    },
+    "persistent-workspaces": {
+      "*": 5, // 5 workspaces by default on every monitor
+      "HDMI-A-1": 3, // but only three on HDMI-A-1
+    },
+  },
+
+  "bluetooth": {
+    "format": "",
+    "format-connected": "",
+    "format-connected-battery": "",
+    // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "blueman-manager",
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "phone-muted": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""],
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+  },
+
+  "network": {
+    "interface": "wlan0",
+7;6u   "format": "{ifname}",
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "nmrs",
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{capacity}%",
+    "format-charging": "{capacity}% 󱐋",
+    "format-plugged": "{capacity}% 󱐋",
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  "custom/notification": {
+    "tooltip": true,
+    "format": "<span size='13pt'>{icon}</span>",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
+  },
+
+}
+1

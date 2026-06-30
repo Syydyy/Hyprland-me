@@ -1,0 +1,22 @@
+/* OXOCARBON THEME */
+/* IBM Carbon Palette */
+
+@define-color bg0 #0d0d0d;
+@define-color bg1 #161616;
+@define-color bg2 #262626;
+@define-color bg3 #393939;
+@define-color bg4 #525252;
+
+@define-color fg #f2f4f8;
+
+@define-color red    #ee5396;
+@define-color orange #eb6f3d;
+@define-color yellow #42be65;
+@define-color green  #42be65;
+@define-color aqua   #3ddbd9;
+@define-color blue   #33b1ff;
+@define-color purple #be95ff;
+
+@define-color gray0 #dde1e7;
+@define-color gray1 #c1c7cd;
+@define-color gray2 #878d96;

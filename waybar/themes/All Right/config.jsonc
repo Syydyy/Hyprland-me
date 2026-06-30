@@ -1,0 +1,66 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 35,
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 8,
+
+  "modules-left": [],
+  "modules-center": [],
+  "modules-right": [
+    "hyprland/workspaces",
+    "clock",
+    "tray",
+    "pulseaudio",
+    "disk",
+    "cpu",
+    "memory",
+    "network",
+    "battery"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "format": "󰥔 {:%H:%M }",
+    "tooltip": false
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_alias}",
+    "on-click": "blueman-manager"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": " {ipaddr}",
+    "format-disconnected": "󰤮 Disconnected",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "on-click": "nmrs"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󱐋 {capacity}%",
+    "format-icons": ["", "", "", "", ""]
+  }
+}

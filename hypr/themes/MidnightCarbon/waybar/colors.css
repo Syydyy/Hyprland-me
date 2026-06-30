@@ -1,0 +1,22 @@
+/* MIDNIGHT CARBON THEME */
+/* Preto puro com azul elétrico e verde terminal */
+
+@define-color bg0 #040404;
+@define-color bg1 #080808;
+@define-color bg2 #111111;
+@define-color bg3 #1c1c1c;
+@define-color bg4 #2d2d2d;
+
+@define-color fg #c9d1d9;
+
+@define-color red    #ff5555;
+@define-color orange #e3b341;
+@define-color yellow #e3b341;
+@define-color green  #3fb950;
+@define-color aqua   #39d0d8;
+@define-color blue   #58a6ff;
+@define-color purple #bc8cff;
+
+@define-color gray0 #b1bac4;
+@define-color gray1 #8b949e;
+@define-color gray2 #484f58;

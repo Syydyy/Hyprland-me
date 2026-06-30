@@ -1,0 +1,123 @@
+/* ================================
+   SwayOSD — Catppuccin Mocha Theme
+   by Sydy
+   ================================ */
+
+/* Paleta Catppuccin Mocha */
+/* Base:    #1e1e2e */
+/* Mantle:  #181825 */
+/* Crust:   #11111b */
+/* Surface0:#313244 */
+/* Surface1:#45475a */
+/* Overlay0:#6c7086 */
+/* Text:    #cdd6f4 */
+/* Mauve:   #cba6f7  ← accent */
+/* Blue:    #89b4fa */
+/* Green:   #a6e3a1 */
+/* Red:     #f38ba8 */
+/* Yellow:  #f9e2af */
+/* Peach:   #fab387 */
+
+window#osd {
+    background: transparent;
+}
+
+/* Container principal do OSD */
+box#container {
+    background-color: rgba(30, 30, 46, 0.92); /* Base com leve transparência */
+    border: 1px solid rgba(203, 166, 247, 0.25); /* Mauve sutil */
+    border-radius: 16px;
+    padding: 16px 20px;
+    min-width: 280px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.45),
+        0 0 0 1px rgba(17, 17, 27, 0.6);
+}
+
+/* Ícone */
+image {
+    color: #cba6f7; /* Mauve */
+    margin-right: 12px;
+    min-width: 24px;
+    min-height: 24px;
+    -gtk-icon-size: 24px;
+}
+
+/* Label de texto (ex: Caps Lock ON/OFF) */
+label {
+    color: #cdd6f4; /* Text */
+    font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Barra de progresso (volume, brilho) */
+progressbar {
+    min-height: 6px;
+    border-radius: 6px;
+}
+
+progressbar trough {
+    background-color: #313244; /* Surface0 */
+    border-radius: 6px;
+    min-height: 6px;
+    border: none;
+}
+
+progressbar progress {
+    background-color: #cba6f7; /* Mauve */
+    border-radius: 6px;
+    min-height: 6px;
+    border: none;
+    transition: all 100ms ease;
+}
+
+/* Volume — barra verde quando normal */
+progressbar.volume progress {
+    background-color: #a6e3a1; /* Green */
+}
+
+/* Volume acima de 100% — barra laranja/pêssego */
+progressbar.volume.overamplified progress {
+    background-color: #fab387; /* Peach */
+}
+
+/* Brilho — barra amarela */
+progressbar.brightness progress {
+    background-color: #f9e2af; /* Yellow */
+}
+
+/* Microfone mudo — barra vermelha */
+progressbar.sink-volume.muted progress,
+progressbar.source-volume.muted progress {
+    background-color: #f38ba8; /* Red */
+}
+
+/* Escala deslizante alternativa */
+scale trough {
+    background-color: #313244;
+    border-radius: 6px;
+    min-height: 6px;
+    border: none;
+}
+
+scale highlight {
+    background-color: #cba6f7;
+    border-radius: 6px;
+}
+
+scale slider {
+    background-color: #cdd6f4;
+    border-radius: 50%;
+    min-width: 14px;
+    min-height: 14px;
+    border: 2px solid #cba6f7;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Separador entre ícone e barra */
+separator {
+    background-color: #45475a; /* Surface1 */
+    min-width: 1px;
+    margin: 0 8px;
+}

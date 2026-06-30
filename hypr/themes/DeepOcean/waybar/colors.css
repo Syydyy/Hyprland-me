@@ -1,0 +1,22 @@
+/* DEEP OCEAN THEME */
+/* Azul marinho quase preto com ciano profundo */
+
+@define-color bg0 #060810;
+@define-color bg1 #0b0d12;
+@define-color bg2 #0f1520;
+@define-color bg3 #162030;
+@define-color bg4 #1e3048;
+
+@define-color fg #caf0f8;
+
+@define-color red    #e06c75;
+@define-color orange #e5a84e;
+@define-color yellow #90e0ef;
+@define-color green  #52d9a0;
+@define-color aqua   #00b4d8;
+@define-color blue   #4dc4ff;
+@define-color purple #7b8cde;
+
+@define-color gray0 #a8d8ea;
+@define-color gray1 #7ab8d0;
+@define-color gray2 #486880;
