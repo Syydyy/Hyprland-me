@@ -1,0 +1,22 @@
+/* MONOKAI PRO THEME */
+/* Monokai Pro Palette */
+
+@define-color bg0 #19181a;
+@define-color bg1 #221f22;
+@define-color bg2 #2d2a2e;
+@define-color bg3 #403e41;
+@define-color bg4 #5b595c;
+
+@define-color fg #fcfcfa;
+
+@define-color red    #ff6188;
+@define-color orange #fc9867;
+@define-color yellow #ffd866;
+@define-color green  #a9dc76;
+@define-color aqua   #78dce8;
+@define-color blue   #78dce8;
+@define-color purple #ab9df2;
+
+@define-color gray0 #c1c0c0;
+@define-color gray1 #939293;
+@define-color gray2 #727072;

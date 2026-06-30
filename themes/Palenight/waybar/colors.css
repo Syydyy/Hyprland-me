@@ -1,0 +1,22 @@
+/* PALENIGHT THEME */
+/* Material Palenight Palette */
+
+@define-color bg0 #1c1f2e;
+@define-color bg1 #292d3e;
+@define-color bg2 #303347;
+@define-color bg3 #3c415a;
+@define-color bg4 #585e7d;
+
+@define-color fg #a6accd;
+
+@define-color red    #f07178;
+@define-color orange #f78c6c;
+@define-color yellow #ffcb6b;
+@define-color green  #c3e88d;
+@define-color aqua   #89ddff;
+@define-color blue   #82aaff;
+@define-color purple #c792ea;
+
+@define-color gray0 #a6accd;
+@define-color gray1 #717cb4;
+@define-color gray2 #525973;

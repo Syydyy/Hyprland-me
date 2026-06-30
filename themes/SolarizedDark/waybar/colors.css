@@ -1,0 +1,22 @@
+/* SOLARIZED DARK THEME */
+/* Paleta científica Solarized de Ethan Schoonover */
+
+@define-color bg0 #001e26;
+@define-color bg1 #002b36;
+@define-color bg2 #073642;
+@define-color bg3 #0a4555;
+@define-color bg4 #586e75;
+
+@define-color fg #839496;
+
+@define-color red    #dc322f;
+@define-color orange #cb4b16;
+@define-color yellow #b58900;
+@define-color green  #859900;
+@define-color aqua   #2aa198;
+@define-color blue   #268bd2;
+@define-color purple #6c71c4;
+
+@define-color gray0 #93a1a1;
+@define-color gray1 #839496;
+@define-color gray2 #657b83;

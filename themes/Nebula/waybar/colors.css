@@ -1,0 +1,22 @@
+/* NEBULA THEME */
+/* Preto absoluto + magenta neon + ciano estelar */
+
+@define-color bg0 #040008;
+@define-color bg1 #0a0010;
+@define-color bg2 #12002a;
+@define-color bg3 #1e0040;
+@define-color bg4 #3a1060;
+
+@define-color fg #e8d5ff;
+
+@define-color red    #ff2dce;
+@define-color orange #ff6ef7;
+@define-color yellow #d4aaff;
+@define-color green  #30d5c8;
+@define-color aqua   #00f5e0;
+@define-color blue   #bf5af2;
+@define-color purple #7a3db5;
+
+@define-color gray0 #c8b0e8;
+@define-color gray1 #9a80c0;
+@define-color gray2 #6a5090;
