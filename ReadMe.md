@@ -4,15 +4,14 @@ Minha configuração pessoal do Hyprland para Arch Linux / CachyOS, com tema din
 
 ## Alguns atalhos importantes
 
-* Terminal aberto para gatos - SUPER + T
-
+* Abrir Terminal - SUPER + T
 * Fechar uma janela - SUPER + Q
 * Abrir navegador (Firefox) - SUPER + B
-* Launcher de aplicativos abertos (Rofi) - SUPER + R
-* Vscode aberto - SUPER + V
+* Launcher de aplicativos (Rofi) - SUPER + R
+* Abrir Vscode  - SUPER + V
 * Prancheta Aberta - SUPER + Shift + V
-* Seletor de tema aberto personalizado - SUPER + RETURN
-* Comutador de papel de parede personalizado aberto - SUPER + W
+* Seletor de tema personalizado - SUPER + RETURN
+* Seletor de papel de parede personalizado - SUPER + W
 * Switcher de barra de waybar aberta - SUPER + Shift + W
 * Abrir um comutador personalizado de transição de papel de parede - SUPER + Alt + W
 * Abrir o menu de Aparência (Todos os switchers estão disponíveis aqui) - SUPER + A
