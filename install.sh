@@ -21,14 +21,16 @@ if ! command -v yay &> /dev/null; then
     rm -rf /tmp/yay
 fi
 
-if [ -f "$REPO_DIR/explicit_packages.txt" ]; then
+if [ -s "$REPO_DIR/explicit_packages.txt" ]; then
     echo "📦 Instalando pacotes oficiais..."
-    sudo pacman -S --needed --noconfirm - < "$REPO_DIR/explicit_packages.txt" || true
+    sudo pacman -S --needed --noconfirm $(cat "$REPO_DIR/explicit_packages.txt") || \
+        echo "⚠️  Alguns pacotes oficiais podem ter falhado. Verifique manualmente."
 fi
 
-if [ -f "$REPO_DIR/aur_packages.txt" ]; then
+if [ -s "$REPO_DIR/aur_packages.txt" ]; then
     echo "📦 Instalando pacotes do AUR..."
-    yay -S --needed --noconfirm - < "$REPO_DIR/aur_packages.txt" || true
+    yay -S --needed --noconfirm $(cat "$REPO_DIR/aur_packages.txt") || \
+        echo "⚠️  Alguns pacotes do AUR podem ter falhado. Verifique manualmente."
 fi
 
 echo "⚙️  Copiando configurações para $CONFIG_DIR..."
@@ -48,9 +50,9 @@ if [ -d "$REPO_DIR/themes" ]; then
 fi
 
 echo "🔧 Ajustando permissões de scripts..."
-find "$CONFIG_DIR/hypr" -type f -name "*.sh" -exec chmod +x {} \;
+find "$CONFIG_DIR/hypr" -type f -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true
 find "$CONFIG_DIR/rofi" -type f \( -name "*.sh" -o -path "*/scripts/*" \) -exec chmod +x {} \; 2>/dev/null || true
-find "$CONFIG_DIR/waybar" -type f -name "*.sh" -exec chmod +x {} \;
+find "$CONFIG_DIR/waybar" -type f -name "*.sh" -exec chmod +x {} \; 2>/dev/null || true
 
 echo "=================================================="
 echo "✅ Instalação concluída!"
