@@ -2,6 +2,22 @@
 
 Minha configuração pessoal do Hyprland para Arch Linux / CachyOS, com tema dinâmico, dotfiles modulares em Lua e instalador automatizado.
 
+## Alguns atalhos importantes
+
+Open kitty terminal - Super + T
+Close a window - Super + Q
+Open browser (Firefox) - Super + B
+Open app launcher (Rofi) - Super + R
+Open vscode - Super + V
+Open Clipboard - Super + Shift + V 
+Open Custom theme switcher - Super + RETURN
+Open Custom wallpaper switcher - Super + W
+Open waybar switcher - Super + Shift + W
+Open custom wallpaper transition switcher - Super + Alt + W
+Open Appearance menu (All switchers are available here) - Super + A
+Logout and close all apps - Super + CTRL + P
+You can change these keybindings in ~/.config/hypr/modules/keybinds.lua
+
 ## ✨ Stack
 
 - **Hyprland** (configuração modular em Lua, 0.55+)
