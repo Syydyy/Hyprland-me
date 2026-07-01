@@ -7,25 +7,15 @@ Minha configuração pessoal do Hyprland para Arch Linux / CachyOS, com tema din
 * Terminal aberto para gatos - SUPER + T
 
 * Fechar uma janela - SUPER + Q
-
 * Abrir navegador (Firefox) - SUPER + B
-
 * Launcher de aplicativos abertos (Rofi) - SUPER + R
-
 * Vscode aberto - SUPER + V
-
 * Prancheta Aberta - SUPER + Shift + V
-
 * Seletor de tema aberto personalizado - SUPER + RETURN
-
 * Comutador de papel de parede personalizado aberto - SUPER + W
-
 * Switcher de barra de waybar aberta - SUPER + Shift + W
-
 * Abrir um comutador personalizado de transição de papel de parede - SUPER + Alt + W
-
 * Abrir o menu de Aparência (Todos os switchers estão disponíveis aqui) - SUPER + A
-
 * Sair e fechar todos os aplicativos - SUPER + CTRL + P
 * Você pode alterar essas configurações de teclas em ~/.config/hypr/modules/keybinds.lua
 
