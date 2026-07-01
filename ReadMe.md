@@ -1,4 +1,4 @@
-# Hyprland-me
+# Hyprland-me - Guia básico para minhasa configurações
 
 Minha configuração pessoal do Hyprland para Arch Linux / CachyOS, com tema dinâmico, dotfiles modulares em Lua e instalador automatizado.
 
