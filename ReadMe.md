@@ -37,6 +37,13 @@ Cada tema entrega cores para Hyprland, Waybar, Rofi, Kitty, Hyprlock e SwayNC si
 
 ## 🚀 Instalação
 
+\`\`\`bash
+git clone https://github.com/Syydyy/Hyprland-me.git
+cd Hyprland-me
+./install.sh
+\`\`\`
+
+
 * sudo pacman -S --needed git base-devel
 * git clone https://github.com/Syydyy/Hyprland-me.git ~/Hyprland-me
 * cd ~/Hyprland-me
