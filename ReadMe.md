@@ -43,6 +43,12 @@ cd Hyprland-me
 ./install.sh
 \`\`\`
 
+* sudo pacman -S --needed git base-devel
+* git clone https://github.com/Syydyy/Hyprland-me.git ~/Hyprland-me
+* cd ~/Hyprland-me
+* chmod +x install.sh
+* ./install.sh
+
 O script instala os pacotes necessários (oficiais e AUR), copia as configurações para \`~/.config/\` e ajusta as permissões dos scripts.
 
 ## 📦 Pacotes
